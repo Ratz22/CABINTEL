@@ -1,0 +1,55 @@
+/* Parallax Background for Hero Section */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 87, 51, 0.8), rgba(255, 193, 7, 0.8), rgba(40, 167, 69, 0.8));
+    z-index: 1;
+}
+
+/* Holographic Gradient Buttons */
+.gradient-button {
+    background: linear-gradient(135deg, #FF5733, #FFC107, #28A745);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 87, 51, 0.3);
+}
+
+.gradient-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(255, 87, 51, 0.5);
+}
+
+/* Desi Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+/* Animated SVGs */
+.character {
+    width: 80px;
+    height: 80px;
+    margin: 16px auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* 3D Map Container */
+.map-container {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+} 
